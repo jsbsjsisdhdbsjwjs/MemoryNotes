@@ -8,6 +8,12 @@ Build `learning-memory-notes`, a local-first app for quick study note capture, p
 
 - Use dependency-free HTML/CSS/JS for the first version because the current environment has Node but no working `python`, `py`, or `gh`.
 - Store user data in browser `localStorage` initially, with JSON export as a safety path.
+- Add a WPF desktop floating note executable for browser-independent quick capture.
+
+## Recent Changes
+
+- Added `learning-memory-notes/desktop-floating-note`, a .NET WPF project that builds `MemoryNotesFloating.exe`.
+- Desktop notes are stored at `%APPDATA%\MemoryNotes\notes.json`.
 
 ## Risks
 

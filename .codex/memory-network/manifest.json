@@ -13,6 +13,12 @@
       "title": "Use dependency-free local web app first",
       "body": "Python and gh are unavailable in the current environment, so the first implementation uses native HTML/CSS/JS with localStorage to keep the app runnable without dependency installation.",
       "tags": ["architecture", "local-first", "no-dependencies"]
+    },
+    {
+      "type": "change",
+      "title": "Add Windows desktop floating note executable",
+      "body": "Added a WPF .NET desktop app under learning-memory-notes/desktop-floating-note. It launches as a topmost draggable floating note window independent of the browser and stores notes in %APPDATA%/MemoryNotes/notes.json.",
+      "tags": ["desktop", "wpf", "exe", "floating-window"]
     }
   ]
 }
