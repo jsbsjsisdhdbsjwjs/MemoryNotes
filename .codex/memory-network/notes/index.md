@@ -26,9 +26,11 @@ Build `learning-memory-notes`, a local-first app for quick study note capture, p
 - Vault: `C:\Users\JC\Documents\Obsidian Vault`
 - Added notes for MemoryNotes and BearingDiagnose.
 - Added project workflow note for `project-ops-memory`.
+- Obsidian Vault is now a standalone local Git repository.
+- First local vault commit: `f8524c9 Initialize Obsidian project vault`.
 
 ## Risks
 
 - GitHub upload is not complete until a remote repository URL is provided or GitHub CLI/auth is available.
 - The memory-network CLI could not run because Python is not installed.
-- Obsidian Vault is not currently a Git repository.
+- Obsidian Vault still needs a GitHub remote URL before it can be pushed.

@@ -31,6 +31,12 @@
       "title": "Mirror project knowledge to Obsidian ops notes",
       "body": "User wants MemoryNotes, BearingDiagnose, future ideas, and new deployments to be recorded in Obsidian with project notes, ops notes, tags, and recurring Git pushes. A project-ops-memory skill was created for this workflow.",
       "tags": ["obsidian", "ops", "skill", "git"]
+    },
+    {
+      "type": "change",
+      "title": "Initialize Obsidian Vault Git repository",
+      "body": "Initialized C:/Users/JC/Documents/Obsidian Vault as a standalone Git repository and created the first local commit f8524c9. Remote URL is still needed before pushing to GitHub.",
+      "tags": ["obsidian", "git", "vault"]
     }
   ]
 }
