@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>学习记忆笔记</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div>
+            <h1>学习记忆笔记</h1>
+            <p>项目、知识树、关联网络</p>
+          </div>
+          <button id="toggleFloat" class="icon-button" title="打开悬浮记录窗">✎</button>
+        </div>
+
+        <section class="panel">
+          <div class="section-title">
+            <h2>学习项目</h2>
+            <button id="addProjectBtn" class="small-button">新增</button>
+          </div>
+          <form id="projectForm" class="inline-form">
+            <input id="projectName" type="text" placeholder="例如：考研数学" maxlength="32" />
+            <button type="submit">添加</button>
+          </form>
+          <div id="projectList" class="project-list"></div>
+        </section>
+
+        <section class="panel grow">
+          <div class="section-title">
+            <h2>知识树</h2>
+            <button id="addTreeNodeBtn" class="small-button">节点</button>
+          </div>
+          <form id="treeForm" class="stack-form">
+            <input id="treeTitle" type="text" placeholder="知识节点名称" maxlength="48" />
+            <select id="treeParent"></select>
+            <button type="submit">加入知识树</button>
+          </form>
+          <div id="knowledgeTree" class="tree"></div>
+        </section>
+      </aside>
+
+      <section class="workspace">
+        <header class="toolbar">
+          <div>
+            <span class="eyebrow">当前项目</span>
+            <h2 id="currentProjectTitle">未选择</h2>
+          </div>
+          <div class="toolbar-actions">
+            <input id="searchInput" type="search" placeholder="搜索笔记、标签、知识点" />
+            <button id="exportBtn">导出 JSON</button>
+          </div>
+        </header>
+
+        <section class="dashboard">
+          <article class="metric-card">
+            <span>笔记</span>
+            <strong id="noteCount">0</strong>
+          </article>
+          <article class="metric-card">
+            <span>知识节点</span>
+            <strong id="treeCount">0</strong>
+          </article>
+          <article class="metric-card">
+            <span>关联边</span>
+            <strong id="linkCount">0</strong>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <article class="surface">
+            <div class="section-title">
+              <h2>记忆关联网络</h2>
+              <span id="networkHint">自动从标签、关键词、知识节点生成</span>
+            </div>
+            <canvas id="networkCanvas" width="900" height="520"></canvas>
+          </article>
+
+          <article class="surface">
+            <div class="section-title">
+              <h2>笔记流</h2>
+              <span id="noteHint">按时间倒序</span>
+            </div>
+            <div id="noteList" class="note-list"></div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <section id="floatWindow" class="float-window" aria-label="悬浮笔记窗口">
+      <div id="floatHeader" class="float-header">
+        <span>快速记录</span>
+        <button id="hideFloat" class="icon-button" title="收起">×</button>
+      </div>
+      <form id="noteForm" class="note-form">
+        <select id="noteProject"></select>
+        <textarea id="noteContent" rows="7" placeholder="输入学习笔记。可使用 #标签，或写出知识点名称来自动建立关联。"></textarea>
+        <input id="noteTags" type="text" placeholder="标签，用逗号分隔，例如：傅里叶,错题,公式" />
+        <button type="submit">保存笔记并关联</button>
+      </form>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

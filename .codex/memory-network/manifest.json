@@ -1,0 +1,18 @@
+{
+  "project": "learning-memory-notes",
+  "createdAt": "2026-05-14T00:00:00+08:00",
+  "notes": [
+    {
+      "type": "goal",
+      "title": "Build a quick learning note app",
+      "body": "User wants a floating note app that supports learning projects, automatic associative memory network generation, and knowledge tree construction.",
+      "tags": ["learning-notes", "memory-network", "knowledge-tree"]
+    },
+    {
+      "type": "decision",
+      "title": "Use dependency-free local web app first",
+      "body": "Python and gh are unavailable in the current environment, so the first implementation uses native HTML/CSS/JS with localStorage to keep the app runnable without dependency installation.",
+      "tags": ["architecture", "local-first", "no-dependencies"]
+    }
+  ]
+}
