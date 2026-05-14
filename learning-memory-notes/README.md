@@ -7,6 +7,7 @@
 - 学习项目：先创建项目，再按项目管理笔记、知识树和关联网络。
 - 悬浮记录窗：页面右下角可拖动，支持快速输入笔记。
 - 桌面悬浮窗：可构建 Windows exe，关闭浏览器后仍可直接记录笔记。
+- Obsidian 对接：桌面端保存笔记时，会按学习项目自动更新 Obsidian 项目笔记、运维笔记和 tags。
 - 记忆关联网络：从 `#标签`、手动标签、知识树节点和笔记关键词自动生成概念关联。
 - 知识树：支持根节点和父子节点，用于搭建课程/主题结构。
 - 本地保存：网页端数据保存在浏览器 `localStorage`；桌面端默认保存到 E 盘。
@@ -59,6 +60,15 @@ E:\MemoryNotes\data\notes.json
 ```
 
 说明：浏览器网页端受安全限制，不能直接把 `localStorage` 写到 E 盘；需要长期保存时请使用导出 JSON，或优先使用桌面悬浮窗 exe。
+
+桌面端同步 Obsidian：
+
+```text
+C:\Users\JC\Documents\Obsidian Vault\Projects\<项目名>.md
+C:\Users\JC\Documents\Obsidian Vault\Ops\<项目名> Ops.md
+```
+
+保存笔记时会自动创建缺失的项目笔记和运维笔记，并把用户输入的标签和关键词写入 frontmatter tags 与运维条目。
 
 ## 后续优化方向
 

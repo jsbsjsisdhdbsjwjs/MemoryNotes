@@ -37,6 +37,12 @@
       "title": "Initialize Obsidian Vault Git repository",
       "body": "Initialized C:/Users/JC/Documents/Obsidian Vault as a standalone Git repository and pushed it to https://github.com/jsbsjsisdhdbsjwjs/obsidian. First local commit was f8524c9.",
       "tags": ["obsidian", "git", "vault"]
+    },
+    {
+      "type": "change",
+      "title": "Sync MemoryNotes desktop captures to Obsidian",
+      "body": "MemoryNotes desktop floating window now writes captured notes to Obsidian project and ops notes under Projects/<project>.md and Ops/<project> Ops.md, merging tags from user input and extracted note terms.",
+      "tags": ["memorynotes", "obsidian", "desktop", "ops"]
     }
   ]
 }

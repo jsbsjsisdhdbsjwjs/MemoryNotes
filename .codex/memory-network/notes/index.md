@@ -29,6 +29,7 @@ Build `learning-memory-notes`, a local-first app for quick study note capture, p
 - Obsidian Vault is now a standalone local Git repository.
 - First local vault commit: `f8524c9 Initialize Obsidian project vault`.
 - Obsidian remote: `https://github.com/jsbsjsisdhdbsjwjs/obsidian`
+- MemoryNotes desktop captures now sync into Obsidian `Projects/` and `Ops/` notes.
 
 ## Risks
 
