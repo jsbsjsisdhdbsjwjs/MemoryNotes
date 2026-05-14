@@ -6,6 +6,7 @@
 
 - 学习项目：先创建项目，再按项目管理笔记、知识树和关联网络。
 - 悬浮记录窗：页面右下角可拖动，支持快速输入笔记。
+- 桌面悬浮窗：可构建 Windows exe，关闭浏览器后仍可直接记录笔记。
 - 记忆关联网络：从 `#标签`、手动标签、知识树节点和笔记关键词自动生成概念关联。
 - 知识树：支持根节点和父子节点，用于搭建课程/主题结构。
 - 本地保存：数据保存在浏览器 `localStorage`。
@@ -29,6 +30,26 @@ npm start
 
 ```text
 http://127.0.0.1:5173
+```
+
+## Windows 桌面悬浮窗
+
+构建 exe：
+
+```text
+dotnet publish desktop-floating-note/DesktopFloatingNote.csproj -c Release -r win-x64 --self-contained false
+```
+
+运行生成文件：
+
+```text
+desktop-floating-note/bin/Release/net10.0-windows/win-x64/publish/MemoryNotesFloating.exe
+```
+
+桌面端数据保存位置：
+
+```text
+%APPDATA%\MemoryNotes\notes.json
 ```
 
 ## 后续优化方向
