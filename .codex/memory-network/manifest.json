@@ -35,7 +35,7 @@
     {
       "type": "change",
       "title": "Initialize Obsidian Vault Git repository",
-      "body": "Initialized C:/Users/JC/Documents/Obsidian Vault as a standalone Git repository and created the first local commit f8524c9. Remote URL is still needed before pushing to GitHub.",
+      "body": "Initialized C:/Users/JC/Documents/Obsidian Vault as a standalone Git repository and pushed it to https://github.com/jsbsjsisdhdbsjwjs/obsidian. First local commit was f8524c9.",
       "tags": ["obsidian", "git", "vault"]
     }
   ]
