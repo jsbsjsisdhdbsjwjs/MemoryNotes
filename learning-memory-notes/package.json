@@ -1,0 +1,10 @@
+{
+  "name": "learning-memory-notes",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first study notes app with floating capture, knowledge tree, and associative memory graph.",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check app.js && node --check server.js"
+  }
+}
