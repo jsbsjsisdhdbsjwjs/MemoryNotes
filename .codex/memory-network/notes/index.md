@@ -18,8 +18,17 @@ Build `learning-memory-notes`, a local-first app for quick study note capture, p
 ## User Preferences
 
 - Default all project data to E drive when the environment supports it.
+- Mirror project knowledge into Obsidian notes with tags and ops runbooks.
+- For new ideas and deployments, update project notes and push relevant Git repositories.
+
+## Obsidian
+
+- Vault: `C:\Users\JC\Documents\Obsidian Vault`
+- Added notes for MemoryNotes and BearingDiagnose.
+- Added project workflow note for `project-ops-memory`.
 
 ## Risks
 
 - GitHub upload is not complete until a remote repository URL is provided or GitHub CLI/auth is available.
 - The memory-network CLI could not run because Python is not installed.
+- Obsidian Vault is not currently a Git repository.

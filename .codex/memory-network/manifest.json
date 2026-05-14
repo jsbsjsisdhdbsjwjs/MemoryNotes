@@ -25,6 +25,12 @@
       "title": "Default project data to E drive",
       "body": "User prefers all project data to default to E drive. Desktop MemoryNotes now stores notes at E:/MemoryNotes/data/notes.json when E drive is available, with an AppData fallback.",
       "tags": ["storage", "user-preference", "e-drive"]
+    },
+    {
+      "type": "decision",
+      "title": "Mirror project knowledge to Obsidian ops notes",
+      "body": "User wants MemoryNotes, BearingDiagnose, future ideas, and new deployments to be recorded in Obsidian with project notes, ops notes, tags, and recurring Git pushes. A project-ops-memory skill was created for this workflow.",
+      "tags": ["obsidian", "ops", "skill", "git"]
     }
   ]
 }
