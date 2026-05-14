@@ -13,7 +13,11 @@ Build `learning-memory-notes`, a local-first app for quick study note capture, p
 ## Recent Changes
 
 - Added `learning-memory-notes/desktop-floating-note`, a .NET WPF project that builds `MemoryNotesFloating.exe`.
-- Desktop notes are stored at `%APPDATA%\MemoryNotes\notes.json`.
+- Desktop notes default to `E:\MemoryNotes\data\notes.json`, with `%APPDATA%\MemoryNotes\notes.json` as fallback.
+
+## User Preferences
+
+- Default all project data to E drive when the environment supports it.
 
 ## Risks
 

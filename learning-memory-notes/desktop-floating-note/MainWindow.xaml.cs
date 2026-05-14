@@ -27,14 +27,39 @@ public partial class MainWindow : Window
         InitializeComponent();
         Left = SystemParameters.WorkArea.Right - Width - 24;
         Top = SystemParameters.WorkArea.Bottom - Height - 24;
-        _dataPath = Path.Combine(
-            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-            "MemoryNotes",
-            "notes.json");
+        _dataPath = ResolveDataPath();
         LoadState();
         ProjectCombo.ItemsSource = _projects;
         ProjectCombo.SelectedValue = _state.ActiveProjectId;
         RenderRecent();
+    }
+
+    private static string ResolveDataPath()
+    {
+        const string preferredRoot = @"E:\";
+        if (Directory.Exists(preferredRoot))
+        {
+            var preferredDirectory = Path.Combine(preferredRoot, "MemoryNotes", "data");
+            try
+            {
+                Directory.CreateDirectory(preferredDirectory);
+                return Path.Combine(preferredDirectory, "notes.json");
+            }
+            catch (UnauthorizedAccessException)
+            {
+                // Fall back below when the drive exists but the app cannot write there.
+            }
+            catch (IOException)
+            {
+                // Fall back below when the drive is temporarily unavailable.
+            }
+        }
+
+        var fallbackDirectory = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+            "MemoryNotes");
+        Directory.CreateDirectory(fallbackDirectory);
+        return Path.Combine(fallbackDirectory, "notes.json");
     }
 
     private void LoadState()

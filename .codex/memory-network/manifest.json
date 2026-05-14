@@ -19,6 +19,12 @@
       "title": "Add Windows desktop floating note executable",
       "body": "Added a WPF .NET desktop app under learning-memory-notes/desktop-floating-note. It launches as a topmost draggable floating note window independent of the browser and stores notes in %APPDATA%/MemoryNotes/notes.json.",
       "tags": ["desktop", "wpf", "exe", "floating-window"]
+    },
+    {
+      "type": "decision",
+      "title": "Default project data to E drive",
+      "body": "User prefers all project data to default to E drive. Desktop MemoryNotes now stores notes at E:/MemoryNotes/data/notes.json when E drive is available, with an AppData fallback.",
+      "tags": ["storage", "user-preference", "e-drive"]
     }
   ]
 }
